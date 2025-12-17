@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/icon.png" alt="MiCA" align="left" width="120px">
+  <img src="imgs/mica.jpg" alt="MiCA" align="left" width="120px">
 </p>
 
 <p>MiCA is a python package for miCRISPR-seq analysis. We developed a probabilistic assignment of knockout perturbations onto cell state transition graphs in defined microglial states to show the effect of perturbation on the trajectory, revealing important regulators of distinct putative microglial states in the context of Alzheimer's Disease.
