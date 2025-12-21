@@ -27,11 +27,9 @@
 3. Returns position (where along the transition edge) and confidence scores
 
 This reveals not just *which* states are affected, but *where along the trajectory* each gene acts — transforming pooled screen data into interpretable phenotypic coordinates.
-
 <p align="center">
   <img src="imgs/example_trajectory.png" alt="Example trajectory projection" width="700">
 </p>
-
 ---
 
 ### Installation
@@ -136,15 +134,10 @@ plotter.plot_projection(
 
 ```python
 plotter.plot_state_profiles(
-    normalize='relative',  # Dominance-scaled
-    auto_scale=True        # Per-panel color scaling
-)
-plotter.plot_state_profiles(
     cmap_range=(-2.,2.),
     normalize='relative_both', # Normalizes both sides independently
     penalty=1, figsize=(15,10), auto_scale=True
 )
-
 ```
 <p align="center">
   <img src="imgs/example_state.png" alt="Example state projection" width="700">
@@ -164,8 +157,6 @@ plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 - Anndata/DataFrame input support
 - Calculation of module scores and pathway scores
 - Calculation of various states
-
-
 
 ### Citation
 
