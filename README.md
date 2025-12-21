@@ -5,7 +5,9 @@
 <p>MiCA is a python package for miCRISPR-seq analysis. We developed a probabilistic assignment of knockout perturbations onto cell state transition graphs in defined microglial states to show the effect of perturbation on the trajectory, revealing important regulators of distinct putative microglial states in the context of Alzheimer's Disease.
 </p> 
 
+
 ---
+
 <p align="center">
   <a href="#installation">Installation</a> •
   <a href="#quick-start">Quick Start</a> •
@@ -14,7 +16,7 @@
   <a href="#todo">Todos</a>
 </p>
 
-## Overview
+### Overview
 
 **MiCA** projects CRISPR knockout effects onto a graph of cell state transitions developed for miCRISPR-seq data. Given perturbation enrichment scores across cell states, the method:
 
@@ -28,9 +30,9 @@ This reveals not just *which* states are affected, but *where along the trajecto
   <img src="imgs/trajectory_example.png" alt="Example trajectory projection" width="700">
 </p>
 
----
+--
 
-## Installation
+### Installation
 
 ```bash
 pip install mica
@@ -42,9 +44,9 @@ pip install -e .
 
 **Requirements:** numpy, pandas, scipy, matplotlib, adjustText, igraph
 
----
+--
 
-## Quick Start
+### Quick Start
 
 ```python
 from mica import EdgeProjector, ProjectionPlotter, load_data
@@ -73,11 +75,11 @@ plotter.plot_confidence_distribution()
 | Mef2c | HM--iHM | 0.67 | 0.71 |
 | ... | ... | ... | ... |
 
----
+--
 
 ## API Reference
 
-### `EdgeProjector`
+#### `EdgeProjector`
 
 ```python
 proj = EdgeProjector(sc_data, ko_data, states=None)
@@ -89,7 +91,7 @@ proj = EdgeProjector(sc_data, ko_data, states=None)
 | `ko_data` | KO enrichment DataFrame with: `crispr_guides2`, state scores |
 | `states` | List of state columns (default: `['pdam', 'exdam', 'idam', 'irm', 'img', 'hm']`) |
 
-### `build_graph()`
+#### `build_graph()`
 
 ```python
 proj.build_graph(method='gabriel', space='state', k=3)
@@ -101,7 +103,7 @@ proj.build_graph(method='gabriel', space='state', k=3)
 | `space` | `'state'` | `'state'`, `'umap'` |
 | `k` | `3` | k for k-NN (ignored for other methods) |
 
-### `project_all()`
+#### `project_all()`
 
 ```python
 results = proj.project_all(tau=0.4, tau_cluster=0.3)
@@ -111,9 +113,9 @@ Returns DataFrame with: `ko`, `edge`, `c1`, `c2`, `t`, `confidence`, `direction`
 
 ---
 
-## Visualization
+### Visualization
 
-### `ProjectionPlotter`
+#### `ProjectionPlotter`
 
 ```python
 plotter = ProjectionPlotter(proj, results)
@@ -154,18 +156,14 @@ plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 
 ---
 
-## Todo
+### Todo
 - Anndata/DataFrame input support
 - Calculation of module scores and pathway scores
 - Calculation of various states
 
-```
 
 
-## Citation
+### Citation
 
 This work is currently under submission
 
-```
-
----
