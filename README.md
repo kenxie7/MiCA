@@ -121,15 +121,15 @@ plotter = ProjectionPlotter(proj, results)
 
 ```python
 plotter.plot_projection(
-    node_color_method='raw',   # Color nodes by dominant state
-    show_state_legend=True,    # Vertical state legend
-    label_top_n=10,            # Label top confident KOs
-    color_by='direction'       # 'direction', 'confidence', or 'edge'
+    color_by='confidence', size_by='confidence', cell_alpha=0.075,
+    label_top_n=0, label_list = ['Apoe','P2ry12','Spp1','Smad3','Ctsd'],
+    node_color_method='spearman',node_min_alpha=0.5, show_state_legend=True,    # vertical legend appears as inset
+    cmap_choice = "mako", axis_on=False, figsize = (9,5.5)
 )
 ```
 
 <p align="center">
-  <img src="imgs/projection_plot.png" alt="Projection plot" width="600">
+  <img src="imgs/example_proj.png" alt="Projection plot" width="600">
 </p>
 
 #### State profiles
@@ -154,7 +154,7 @@ plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 
 ---
 
-### Todo
+### Todos
 - Anndata/DataFrame input support
 - Calculation of module scores and pathway scores
 - Calculation of various states
