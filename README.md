@@ -11,7 +11,7 @@
   <a href="#quick-start">Quick Start</a> •
   <a href="#api-reference">API</a> •
   <a href="#visualization">Visualization</a> •
-  <a href="#method">Method</a>
+  <a href="#todo">Todos</a>
 </p>
 
 ## Overview
@@ -154,6 +154,10 @@ plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 
 ---
 
+## Todo
+- Anndata/DataFrame input support
+- Calculation of module scores and pathway scores
+- Calculation of various states
 
 ```
 
