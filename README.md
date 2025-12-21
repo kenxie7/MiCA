@@ -22,14 +22,14 @@
 
 **MiCA** projects CRISPR knockout effects onto a graph of cell state transitions developed for miCRISPR-seq data. Given perturbation enrichment scores across cell states, the method:
 
-1. Constructs a **Gabriel graph** connecting cell type clusters in state space
-2. **Probabilistically assigns** each perturbation to a graph edge via cosine similarity
-3. Returns **position** (where along the transition) and **confidence** scores
+1. Constructs a Gabriel graph connecting cell type clusters in state space
+2. Probabilistically assigns each perturbation to a graph edge via cosine similarity
+3. Returns position (where along the transition edge) and confidence scores
 
 This reveals not just *which* states are affected, but *where along the trajectory* each gene acts — transforming pooled screen data into interpretable phenotypic coordinates.
 
 <p align="center">
-  <img src="imgs/trajectory_example.png" alt="Example trajectory projection" width="700">
+  <img src="imgs/example_trajectory.png" alt="Example trajectory projection" width="700">
 </p>
 
 ---
@@ -140,6 +140,9 @@ plotter.plot_state_profiles(
     auto_scale=True        # Per-panel color scaling
 )
 ```
+<p align="center">
+  <img src="imgs/example_state.png" alt="Example state projection" width="700">
+</p>
 
 #### Other plots
 
