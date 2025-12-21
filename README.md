@@ -44,7 +44,7 @@ pip install -e .
 
 **Requirements:** numpy, pandas, scipy, matplotlib, adjustText, igraph
 
-----
+---
 
 ### Quick Start
 
@@ -127,7 +127,7 @@ plotter.plot_projection(
 ```
 
 <p align="center">
-  <img src="imgs/example_proj.png" alt="Projection plot" width="600">
+  <img src="imgs/example_proj.png" alt="Projection plot" width="700">
 </p>
 
 #### State profiles
@@ -140,7 +140,7 @@ plotter.plot_state_profiles(
 )
 ```
 <p align="center">
-  <img src="imgs/example_state.png" alt="Example state projection" width="700">
+  <img src="imgs/example_state.png" alt="Example state projection" width="800">
 </p>
 
 #### Other plots
