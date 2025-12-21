@@ -3,10 +3,12 @@
 </p>
 
 <p>MiCA is a python package for miCRISPR-seq analysis. We developed a probabilistic assignment of knockout perturbations onto cell state transition graphs in defined microglial states to show the effect of perturbation on the trajectory, revealing important regulators of distinct putative microglial states in the context of Alzheimer's Disease.
+
+  
 </p> 
 
 
-----
+---
 
 <p align="center">
   <a href="#installation">Installation</a> •
@@ -30,7 +32,8 @@ This reveals not just *which* states are affected, but *where along the trajecto
   <img src="imgs/trajectory_example.png" alt="Example trajectory projection" width="700">
 </p>
 
-----
+<hr style="border: 1px solid gray;">
+
 
 ### Installation
 
