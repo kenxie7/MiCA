@@ -139,6 +139,12 @@ plotter.plot_state_profiles(
     normalize='relative',  # Dominance-scaled
     auto_scale=True        # Per-panel color scaling
 )
+plotter.plot_state_profiles(
+    cmap_range=(-2.,2.),
+    normalize='relative_both', # Normalizes both sides independently
+    penalty=1, figsize=(15,10), auto_scale=True
+)
+
 ```
 <p align="center">
   <img src="imgs/example_state.png" alt="Example state projection" width="700">
