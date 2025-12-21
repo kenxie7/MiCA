@@ -32,8 +32,7 @@ This reveals not just *which* states are affected, but *where along the trajecto
   <img src="imgs/trajectory_example.png" alt="Example trajectory projection" width="700">
 </p>
 
-<hr style="border: 1px solid gray;">
-
+---
 
 ### Installation
 
@@ -71,13 +70,7 @@ plotter.plot_state_profiles(auto_scale=True)
 plotter.plot_confidence_distribution()
 ```
 
-**Output:**
-| ko | edge | t | confidence |
-|----|------|---|------------|
-| Mef2c | HM--iHM | 0.67 | 0.71 |
-| ... | ... | ... | ... |
-
-----
+---
 
 ## API Reference
 
@@ -113,7 +106,7 @@ results = proj.project_all(tau=0.4, tau_cluster=0.3)
 
 Returns DataFrame with: `ko`, `edge`, `c1`, `c2`, `t`, `confidence`, `direction`, `umap_x`, `umap_y`
 
-----
+---
 
 ### Visualization
 
@@ -156,7 +149,7 @@ plotter.plot_confidence_distribution() # Confidence histogram
 plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 ```
 
-----
+---
 
 ### Todo
 - Anndata/DataFrame input support
