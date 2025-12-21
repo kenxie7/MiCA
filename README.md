@@ -6,7 +6,7 @@
 </p> 
 
 
----
+----
 
 <p align="center">
   <a href="#installation">Installation</a> •
@@ -30,7 +30,7 @@ This reveals not just *which* states are affected, but *where along the trajecto
   <img src="imgs/trajectory_example.png" alt="Example trajectory projection" width="700">
 </p>
 
---
+----
 
 ### Installation
 
@@ -44,7 +44,7 @@ pip install -e .
 
 **Requirements:** numpy, pandas, scipy, matplotlib, adjustText, igraph
 
---
+----
 
 ### Quick Start
 
@@ -71,11 +71,10 @@ plotter.plot_confidence_distribution()
 **Output:**
 | ko | edge | t | confidence |
 |----|------|---|------------|
-| Trem2 | iHM--pDAM | 0.32 | 0.84 |
 | Mef2c | HM--iHM | 0.67 | 0.71 |
 | ... | ... | ... | ... |
 
---
+----
 
 ## API Reference
 
@@ -111,7 +110,7 @@ results = proj.project_all(tau=0.4, tau_cluster=0.3)
 
 Returns DataFrame with: `ko`, `edge`, `c1`, `c2`, `t`, `confidence`, `direction`, `umap_x`, `umap_y`
 
----
+----
 
 ### Visualization
 
@@ -154,7 +153,7 @@ plotter.plot_confidence_distribution() # Confidence histogram
 plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 ```
 
----
+----
 
 ### Todo
 - Anndata/DataFrame input support
