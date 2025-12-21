@@ -30,6 +30,7 @@ This reveals not just *which* states are affected, but *where along the trajecto
 <p align="center">
   <img src="imgs/example_trajectory.png" alt="Example trajectory projection" width="700">
 </p>
+
 ---
 
 ### Installation
