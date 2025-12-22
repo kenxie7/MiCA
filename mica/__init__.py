@@ -19,7 +19,7 @@ Usage
 """
 
 __version__ = '0.1.0'
-__author__ = 'MiCA Team'
+__author__ = 'Ken Xie'
 
 from .projector import EdgeProjector, ProjectionResult, load_data
 from .plotting import ProjectionPlotter
