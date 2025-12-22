@@ -36,11 +36,13 @@ This reveals not just *which* states are affected, but *where along the trajecto
 ### Installation
 
 ```bash
-pip install mica
+pip install git+https://github.com/kenxie7/MiCA.git
+
 # or from source
-git clone https://github.com/username/mica.git
+git clone https://github.com/kenxie7/MiCA.git
 cd mica
 pip install -e .
+
 ```
 
 **Requirements:** numpy, pandas, scipy, matplotlib, adjustText, igraph
@@ -126,11 +128,11 @@ plotter.plot_projection(
     cmap_choice = "mako", axis_on=False, figsize = (9,5.5)
 )
 ```
-
+<!--
 <p align="center">
   <img src="imgs/example_proj.png" alt="Projection plot" width="700">
 </p>
-
+-->
 #### State profiles
 
 ```python
@@ -140,10 +142,11 @@ plotter.plot_state_profiles(
     penalty=1, figsize=(15,10), auto_scale=True
 )
 ```
+<!--
 <p align="center">
   <img src="imgs/example_state.png" alt="Example state projection" width="800">
 </p>
-
+-->
 #### Other plots
 
 ```python
