@@ -27,9 +27,12 @@
 3. Returns position (where along the transition edge) and confidence scores
 
 This reveals not just *which* states are affected, but *where along the trajectory* each gene acts — transforming pooled screen data into interpretable phenotypic coordinates.
+
+<!--
 <p align="center">
   <img src="imgs/example_trajectory.png" alt="Example trajectory projection" width="700">
 </p>
+-->
 
 ---
 
