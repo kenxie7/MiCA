@@ -28,10 +28,13 @@
 
 This reveals not just *which* states are affected, but *where along the trajectory* each gene acts — transforming pooled screen data into interpretable phenotypic coordinates.
 
+Below we show a toy example which was simulated with added noise from our perturbed miCRISPR-seq screen data, with the intent to show how the projection works. The actual data and examples would be shown upon publication. 
+
 [//]: #<!--
 <p align="center">
   <img src="imgs/example_trajectory.png" alt="Example trajectory projection" width="700">
 </p>
+
 [//]: #-->
 
 ---
@@ -58,7 +61,8 @@ pip install -e .
 from mica import EdgeProjector, ProjectionPlotter, load_data
 
 # Load data
-sc_data, ko_data = load_data('single_cell.csv', 'ko_enrichments.csv')
+# The data input would be swapped with adata support for published version. The sc_data is basically adata.obs metadata, whereas the KO data is control normalized state profiles.
+sc_data, ko_data = load_data('examples/example_sc_data_v2.csv', 'examples/example_ko_data_v2.csv')
 
 # Initialize and build graph
 proj = EdgeProjector(sc_data, ko_data)
@@ -131,11 +135,13 @@ plotter.plot_projection(
     cmap_choice = "mako", axis_on=False, figsize = (9,5.5)
 )
 ```
-<!--
+[//]: #<!--
 <p align="center">
   <img src="imgs/example_proj.png" alt="Projection plot" width="700">
 </p>
--->
+
+[//]: #-->
+
 #### State profiles
 
 ```python
@@ -145,11 +151,14 @@ plotter.plot_state_profiles(
     penalty=1, figsize=(15,10), auto_scale=True
 )
 ```
-<!--
+[//]: #<!--
+
 <p align="center">
   <img src="imgs/example_state.png" alt="Example state projection" width="800">
 </p>
--->
+
+[//]: #-->
+
 #### Other plots
 
 ```python
