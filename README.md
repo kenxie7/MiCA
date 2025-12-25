@@ -42,7 +42,7 @@ Below we show a toy example which was simulated with added noise from our pertur
 ### Installation
 
 ```bash
-# Package was built under python 3.10
+# Package was built under python 3.10 on a linux system. Installation time is expected within minutes, requiring only standard python packages.
 
 pip install git+https://github.com/kenxie7/MiCA.git
 
@@ -62,6 +62,7 @@ pip install -e .
 ```python
 
 # We provide a minimally working toy example below (simulated from our miCRISPR-seq data)
+# Runtime should be within a minute for 10k cells due to the grouping and low complexity of KO projection
 
 from mica import EdgeProjector, ProjectionPlotter, load_data
 
