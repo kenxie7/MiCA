@@ -58,10 +58,14 @@ pip install -e .
 ### Quick Start
 
 ```python
+
+# We provide a minimally working toy example below (simulated from our miCRISPR-seq data)
+
 from mica import EdgeProjector, ProjectionPlotter, load_data
 
 # Load data
-# The data input would be swapped with adata support for published version. The sc_data is basically adata.obs metadata, whereas the KO data is control normalized state profiles.
+# The data input would be swapped with adata support for published version. 
+# The sc_data is basically adata.obs metadata, whereas the KO data is control normalized state profiles.
 sc_data, ko_data = load_data('examples/example_sc_data_v2.csv', 'examples/example_ko_data_v2.csv')
 
 # Initialize and build graph
@@ -73,7 +77,7 @@ results = proj.project_all()
 
 # Visualize
 plotter = ProjectionPlotter(proj, results)
-plotter.plot_projection(node_color_method='raw')
+plotter.plot_projection(node_color_method='confidence')
 plotter.plot_state_profiles(auto_scale=True)
 plotter.plot_confidence_distribution()
 ```
