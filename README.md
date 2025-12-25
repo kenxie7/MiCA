@@ -42,6 +42,8 @@ Below we show a toy example which was simulated with added noise from our pertur
 ### Installation
 
 ```bash
+# Package was built under python 3.10
+
 pip install git+https://github.com/kenxie7/MiCA.git
 
 # or from source
