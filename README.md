@@ -180,6 +180,8 @@ plotter.plot_ko_on_edge('Trem2')       # Single KO detail
 - Anndata/DataFrame input support
 - Calculation of module scores and pathway scores
 - Calculation of various states
+- Projection of existing data and/or query of microglia states
+- Human / Mouse conservation states projection
 
 ### Citation
 
